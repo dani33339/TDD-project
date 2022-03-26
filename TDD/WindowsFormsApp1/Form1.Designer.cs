@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.idtextBox = new System.Windows.Forms.TextBox();
+            this.lastnametextBox = new System.Windows.Forms.TextBox();
+            this.phonetextBox = new System.Windows.Forms.TextBox();
+            this.firstnametextBox = new System.Windows.Forms.TextBox();
+            this.adresstextBox5 = new System.Windows.Forms.TextBox();
+            this.salarytextBox = new System.Windows.Forms.TextBox();
+            this.emailtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,10 +46,10 @@
             this.addmorebtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.taxbtn = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.listView = new System.Windows.Forms.ListView();
+            this.salary = new System.Windows.Forms.ColumnHeader();
+            this.id = new System.Windows.Forms.ColumnHeader();
+            this.name = new System.Windows.Forms.ColumnHeader();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -57,54 +57,54 @@
             this.showbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // idtextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(583, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 0;
+            this.idtextBox.Location = new System.Drawing.Point(583, 71);
+            this.idtextBox.Name = "idtextBox";
+            this.idtextBox.Size = new System.Drawing.Size(100, 23);
+            this.idtextBox.TabIndex = 0;
             // 
-            // textBox2
+            // lastnametextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(583, 191);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 0;
+            this.lastnametextBox.Location = new System.Drawing.Point(583, 191);
+            this.lastnametextBox.Name = "lastnametextBox";
+            this.lastnametextBox.Size = new System.Drawing.Size(100, 23);
+            this.lastnametextBox.TabIndex = 0;
             // 
-            // textBox3
+            // phonetextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(407, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 0;
+            this.phonetextBox.Location = new System.Drawing.Point(407, 129);
+            this.phonetextBox.Name = "phonetextBox";
+            this.phonetextBox.Size = new System.Drawing.Size(100, 23);
+            this.phonetextBox.TabIndex = 0;
             // 
-            // textBox4
+            // firstnametextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(583, 129);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 0;
+            this.firstnametextBox.Location = new System.Drawing.Point(583, 129);
+            this.firstnametextBox.Name = "firstnametextBox";
+            this.firstnametextBox.Size = new System.Drawing.Size(100, 23);
+            this.firstnametextBox.TabIndex = 0;
             // 
-            // textBox5
+            // adresstextBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(407, 70);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 0;
+            this.adresstextBox5.Location = new System.Drawing.Point(407, 70);
+            this.adresstextBox5.Name = "adresstextBox5";
+            this.adresstextBox5.Size = new System.Drawing.Size(100, 23);
+            this.adresstextBox5.TabIndex = 0;
             // 
-            // textBox6
+            // salarytextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(407, 191);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 0;
+            this.salarytextBox.Location = new System.Drawing.Point(407, 191);
+            this.salarytextBox.Name = "salarytextBox";
+            this.salarytextBox.Size = new System.Drawing.Size(100, 23);
+            this.salarytextBox.TabIndex = 0;
             // 
-            // textBox7
+            // emailtextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(583, 254);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 0;
+            this.emailtextBox.Location = new System.Drawing.Point(583, 254);
+            this.emailtextBox.Name = "emailtextBox";
+            this.emailtextBox.Size = new System.Drawing.Size(100, 23);
+            this.emailtextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -180,6 +180,7 @@
             this.addonebtn.TabIndex = 3;
             this.addonebtn.Text = "הוסף עובד";
             this.addonebtn.UseVisualStyleBackColor = true;
+            this.addonebtn.Click += new System.EventHandler(this.addonebtn_Click);
             // 
             // addmorebtn
             // 
@@ -198,6 +199,7 @@
             this.exitbtn.TabIndex = 3;
             this.exitbtn.Text = "יציאה";
             this.exitbtn.UseVisualStyleBackColor = true;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
             // taxbtn
             // 
@@ -207,42 +209,39 @@
             this.taxbtn.TabIndex = 3;
             this.taxbtn.Text = "חישוב מס";
             this.taxbtn.UseVisualStyleBackColor = true;
+            this.taxbtn.Click += new System.EventHandler(this.taxbtn_Click);
             // 
-            // listView1
+            // listView
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(41, 95);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(319, 372);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.salary,
+            this.id,
+            this.name});
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(33, 89);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(319, 372);
+            this.listView.TabIndex = 4;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
             // 
-            // label9
+            // salary
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(81, 71);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 15);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "משכורת";
+            this.salary.Text = "משכורת";
+            this.salary.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.salary.Width = 100;
             // 
-            // label10
+            // id
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(193, 71);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 15);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "ת\"ז";
+            this.id.Text = "ת\"ז";
+            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.Width = 100;
             // 
-            // label11
+            // name
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(297, 70);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 15);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "שם";
+            this.name.Text = "שם";
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.name.Width = 100;
             // 
             // label12
             // 
@@ -299,10 +298,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.taxbtn);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.addmorebtn);
@@ -314,13 +310,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.emailtextBox);
+            this.Controls.Add(this.salarytextBox);
+            this.Controls.Add(this.adresstextBox5);
+            this.Controls.Add(this.firstnametextBox);
+            this.Controls.Add(this.phonetextBox);
+            this.Controls.Add(this.lastnametextBox);
+            this.Controls.Add(this.idtextBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -330,13 +326,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox idtextBox;
+        private System.Windows.Forms.TextBox lastnametextBox;
+        private System.Windows.Forms.TextBox phonetextBox;
+        private System.Windows.Forms.TextBox firstnametextBox;
+        private System.Windows.Forms.TextBox adresstextBox5;
+        private System.Windows.Forms.TextBox salarytextBox;
+        private System.Windows.Forms.TextBox emailtextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -348,15 +344,15 @@
         private System.Windows.Forms.Button addmorebtn;
         private System.Windows.Forms.Button exitbtn;
         private System.Windows.Forms.Button taxbtn;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button sortbtn;
         private System.Windows.Forms.Button showbtn;
+        private System.Windows.Forms.ColumnHeader salary;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader name;
     }
 }
 

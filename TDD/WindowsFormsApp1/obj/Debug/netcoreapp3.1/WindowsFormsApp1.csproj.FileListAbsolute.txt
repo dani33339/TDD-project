@@ -1,0 +1,15 @@
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.exe
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.deps.json
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.runtimeconfig.json
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.runtimeconfig.dev.json
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.dll
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.Form1.resources
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.AssemblyInfoInputs.cache
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.AssemblyInfo.cs
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache

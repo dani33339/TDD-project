@@ -52,8 +52,7 @@ namespace WindowsFormsApp1
         private void taxbtn_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem eachItem in listView.Items)
-            {
-                
+            { 
                 double newsalary =  CalcTax(double.Parse(eachItem.SubItems[1].Text));
                 newsalary = Math.Floor(newsalary * 100) / 100;
                 eachItem.SubItems[0].Text = newsalary.ToString();
@@ -121,11 +120,8 @@ namespace WindowsFormsApp1
                 item.SubItems.Add(id);
                 item.SubItems.Add(name.ToString());
                 listView.Items.Add(item);
-                idtextBox.Clear();
-                firstnametextBox.Clear();
-                salarytextBox.Clear();
-            }
 
+            }
         }
     }
 }

@@ -63,6 +63,7 @@
             this.idtextBox.Name = "idtextBox";
             this.idtextBox.Size = new System.Drawing.Size(100, 23);
             this.idtextBox.TabIndex = 0;
+            this.idtextBox.TextChanged += new System.EventHandler(this.idtextBox_TextChanged);
             // 
             // lastnametextBox
             // 

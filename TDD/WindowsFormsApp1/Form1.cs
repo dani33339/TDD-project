@@ -83,5 +83,10 @@ namespace WindowsFormsApp1
         {
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void idtextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

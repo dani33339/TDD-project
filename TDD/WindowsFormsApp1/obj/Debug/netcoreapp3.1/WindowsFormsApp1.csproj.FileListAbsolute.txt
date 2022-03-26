@@ -29,3 +29,4 @@ C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\ב
 C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
 C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
 C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache
+D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.Properties.Resources.resources

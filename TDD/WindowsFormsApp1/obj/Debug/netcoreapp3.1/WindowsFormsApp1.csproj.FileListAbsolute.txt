@@ -13,3 +13,19 @@ D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsF
 D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
 D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
 D:\projects\C#\TDD-PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.exe
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.deps.json
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.runtimeconfig.json
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.runtimeconfig.dev.json
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.dll
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.Form1.resources
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.AssemblyInfoInputs.cache
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.AssemblyInfo.cs
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
+C:\Users\kilim\OneDrive - ac.sce.ac.il\לימודים\שנה ב\סמסטר ב\בדיקות תוכנה\עבודות הגשה\TDD\TDD PROJECT\TDD\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache

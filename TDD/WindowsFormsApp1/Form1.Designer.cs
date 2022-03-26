@@ -47,6 +47,7 @@
             this.exitbtn = new System.Windows.Forms.Button();
             this.taxbtn = new System.Windows.Forms.Button();
             this.listView = new System.Windows.Forms.ListView();
+            this.salarytax = new System.Windows.Forms.ColumnHeader();
             this.salary = new System.Windows.Forms.ColumnHeader();
             this.id = new System.Windows.Forms.ColumnHeader();
             this.name = new System.Windows.Forms.ColumnHeader();
@@ -191,6 +192,7 @@
             this.addmorebtn.TabIndex = 3;
             this.addmorebtn.Text = "הוספת 10,000 עובדים";
             this.addmorebtn.UseVisualStyleBackColor = true;
+            this.addmorebtn.Click += new System.EventHandler(this.addmorebtn_Click);
             // 
             // exitbtn
             // 
@@ -215,39 +217,46 @@
             // listView
             // 
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.salarytax,
             this.salary,
             this.id,
             this.name});
+            this.listView.GridLines = true;
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(33, 89);
+            this.listView.Location = new System.Drawing.Point(26, 73);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(319, 372);
+            this.listView.Size = new System.Drawing.Size(366, 405);
             this.listView.TabIndex = 4;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
             // 
+            // salarytax
+            // 
+            this.salarytax.Text = "משכורת נטו";
+            this.salarytax.Width = 80;
+            // 
             // salary
             // 
             this.salary.Text = "משכורת";
-            this.salary.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.salary.Width = 100;
+            this.salary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.salary.Width = 80;
             // 
             // id
             // 
             this.id.Text = "ת\"ז";
-            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.id.Width = 100;
+            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.id.Width = 80;
             // 
             // name
             // 
             this.name.Text = "שם";
-            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.name.Width = 100;
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.Width = 80;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(297, 32);
+            this.label12.Location = new System.Drawing.Point(312, 38);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(80, 15);
             this.label12.TabIndex = 2;
@@ -354,6 +363,7 @@
         private System.Windows.Forms.ColumnHeader salary;
         private System.Windows.Forms.ColumnHeader id;
         private System.Windows.Forms.ColumnHeader name;
+        private System.Windows.Forms.ColumnHeader salarytax;
     }
 }
 

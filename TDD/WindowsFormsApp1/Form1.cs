@@ -38,7 +38,8 @@ namespace WindowsFormsApp1
                 (string.IsNullOrEmpty(firstnametextBox.Text)) ||
                 (string.IsNullOrEmpty(salarytextBox.Text)))
                 return;
-            ListViewItem item = new ListViewItem(salarytextBox.Text);
+            ListViewItem item = new ListViewItem();
+            item.SubItems.Add(salarytextBox.Text);
             item.SubItems.Add(idtextBox.Text);
             item.SubItems.Add(firstnametextBox.Text);
             listView.Items.Add(item);
@@ -52,7 +53,10 @@ namespace WindowsFormsApp1
         {
             foreach (ListViewItem eachItem in listView.Items)
             {
-                eachItem.SubItems[0].Text = CalcTax(double.Parse(eachItem.SubItems[0].Text)).ToString();
+                
+                double newsalary =  CalcTax(double.Parse(eachItem.SubItems[1].Text));
+                newsalary = Math.Floor(newsalary * 100) / 100;
+                eachItem.SubItems[0].Text = newsalary.ToString();
             }
         }
 
@@ -86,6 +90,41 @@ namespace WindowsFormsApp1
 
         private void idtextBox_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void addmorebtn_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10000; i++)
+            {
+                int namelength = 7;
+
+                // creating a StringBuilder object()
+                StringBuilder name = new StringBuilder();
+                Random random = new Random();
+
+                char letter;
+
+                for (int j = 0; j < namelength; j++)
+                {
+                    double flt = random.NextDouble();
+                    int shift = Convert.ToInt32(Math.Floor(25 * flt));
+                    letter = Convert.ToChar(shift + 65);
+                    name.Append(letter);
+                }
+                String id = random.Next(10000000,99999999).ToString("D6");
+                String salary = random.Next(0, 100000).ToString();
+
+
+                ListViewItem item = new ListViewItem();
+                item.SubItems.Add(salary);
+                item.SubItems.Add(id);
+                item.SubItems.Add(name.ToString());
+                listView.Items.Add(item);
+                idtextBox.Clear();
+                firstnametextBox.Clear();
+                salarytextBox.Clear();
+            }
 
         }
     }

@@ -140,12 +140,8 @@ namespace WindowsFormsApp1
         }
 
         public void SortBySalary()
-        {
-            ListViewItem[] items = new ListViewItem[listView.Items.Count];
-            listView.Items.CopyTo(items, 0);
-
-            sort(items, 0, listView.Items.Count - 1);
-            ////bubble sort runtime O(n)
+        {     
+            ////bubble sort runtime O(n^2)
             //ListView SortedlistView = new ListView();
             //int n = listView.Items.Count;
             //for (int i = 0; i < n - 1; i++)
@@ -159,6 +155,12 @@ namespace WindowsFormsApp1
             //            listView.Items.Remove(temp2);
             //            listView.Items.Insert(j, temp2);
             //        }
+
+            ListViewItem[] items = new ListViewItem[listView.Items.Count];
+            listView.Items.CopyTo(items, 0);
+
+            sort(items, 0, listView.Items.Count - 1);
+
             void merge(ListViewItem[] items, int l, int m, int r)
             {
                 // Find sizes of two

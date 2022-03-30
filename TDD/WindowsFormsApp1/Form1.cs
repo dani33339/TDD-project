@@ -94,7 +94,17 @@ namespace WindowsFormsApp1
 
         private void addmorebtn_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10000; i++)
+            AddEmployees(10000);
+        }
+
+        public ListView getListView()
+        {
+            return listView;
+        }
+
+        public void AddEmployees(int n)
+        {
+            for (int i = 0; i < n; i++)
             {
                 int namelength = 7;
 
@@ -111,7 +121,7 @@ namespace WindowsFormsApp1
                     letter = Convert.ToChar(shift + 65);
                     name.Append(letter);
                 }
-                String id = random.Next(10000000,99999999).ToString("D6");
+                String id = random.Next(10000000, 99999999).ToString("D6");
                 String salary = random.Next(0, 100000).ToString();
 
 
@@ -120,8 +130,122 @@ namespace WindowsFormsApp1
                 item.SubItems.Add(id);
                 item.SubItems.Add(name.ToString());
                 listView.Items.Add(item);
-
             }
+        }
+
+        private void sortbtn_Click(object sender, EventArgs e)
+        {
+            
+            SortBySalary();
+        }
+
+        public void SortBySalary()
+        {
+            ListViewItem[] items = new ListViewItem[listView.Items.Count];
+            listView.Items.CopyTo(items, 0);
+
+            sort(items, 0, listView.Items.Count - 1);
+            ////bubble sort runtime O(n)
+            //ListView SortedlistView = new ListView();
+            //int n = listView.Items.Count;
+            //for (int i = 0; i < n - 1; i++)
+            //    for (int j = 0; j < n - i - 1; j++)
+            //        if (double.Parse(listView.Items[j].SubItems[1].Text) > double.Parse(listView.Items[j + 1].SubItems[1].Text))
+            //        {                        
+            //            ListViewItem temp1 = listView.Items[j];
+            //            ListViewItem temp2 = listView.Items[j+1];
+            //            listView.Items.Remove(temp1);
+            //            listView.Items.Insert(j+1, temp1);
+            //            listView.Items.Remove(temp2);
+            //            listView.Items.Insert(j, temp2);
+            //        }
+            void merge(ListViewItem[] items, int l, int m, int r)
+            {
+                // Find sizes of two
+                // subarrays to be merged
+                int n1 = m - l + 1;
+                int n2 = r - m;
+
+                // Create temp arrays
+                ListViewItem [] L = new ListViewItem[n1];
+                ListViewItem [] R = new ListViewItem[n2];
+                int i, j;
+
+                // Copy data to temp arrays
+                for (i = 0; i < n1; ++i)
+                    L[i] = items[l + i];
+                for (j = 0; j < n2; ++j)
+                    R[j] = items[m + 1 + j];
+
+                // Merge the temp arrays
+
+                // Initial indexes of first
+                // and second subarrays
+                i = 0;
+                j = 0;
+
+                // Initial index of merged
+                // subarray array
+                int k = l;
+                while (i < n1 && j < n2)
+                {
+                    if (double.Parse(items[j].SubItems[1].Text) > double.Parse(items[j + 1].SubItems[1].Text))
+                    {
+                        items[k] = L[i];
+                        i++;
+                    }
+                    else
+                    {
+                        items[k] = R[j];
+                        j++;
+                    }
+                    k++;
+                }
+
+                // Copy remaining elements
+                // of L[] if any
+                while (i < n1)
+                {
+                    items[k] = L[i];
+                    i++;
+                    k++;
+                }
+
+                // Copy remaining elements
+                // of R[] if any
+                while (j < n2)
+                {
+                    items[k] = R[j];
+                    j++;
+                    k++;
+                }
+            }
+
+            // Main function that
+            // sorts arr[l..r] using
+            // merge()
+            void sort(ListViewItem [] items, int l, int r)
+            {
+                if (l < r)
+                {
+                    // Find the middle
+                    // point
+                    int m = l + (r - l) / 2;
+
+                    // Sort first and
+                    // second halves
+                    sort(items, l, m);
+                    sort(items, m + 1, r);
+
+                    // Merge the sorted halves
+                    merge(items, l, m, r);
+                }
+            }
+        }
+
+        private void listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

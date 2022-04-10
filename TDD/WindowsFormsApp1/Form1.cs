@@ -106,29 +106,20 @@ namespace WindowsFormsApp1
         {
             for (int i = 0; i < n; i++)
             {
-                int namelength = 7;
-
+                String[] First_names = { "Liam","Noah","Oliver","Elijah","William","James","Benjamin","Lucas","Henry","Alexander"};
+                String[] Last_Names = { "Smith","Johnson","Scottis","Williams","WelshBrown","WelshGarcia","Davis","Welsh","Rodriguez","Martinez"};
                 // creating a StringBuilder object()
                 StringBuilder name = new StringBuilder();
                 Random random = new Random();
 
-                char letter;
-
-                for (int j = 0; j < namelength; j++)
-                {
-                    double flt = random.NextDouble();
-                    int shift = Convert.ToInt32(Math.Floor(25 * flt));
-                    letter = Convert.ToChar(shift + 65);
-                    name.Append(letter);
-                }
+               
                 String id = random.Next(10000000, 99999999).ToString("D6");
                 String salary = random.Next(0, 100000).ToString();
-
 
                 ListViewItem item = new ListViewItem();
                 item.SubItems.Add(salary);
                 item.SubItems.Add(id);
-                item.SubItems.Add(name.ToString());
+                item.SubItems.Add(First_names[random.Next(First_names.Length)]);
                 listView.Items.Add(item);
             }
         }
@@ -246,6 +237,11 @@ namespace WindowsFormsApp1
         }
 
         private void listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adresstextBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -93,6 +93,7 @@
             this.adresstextBox5.Name = "adresstextBox5";
             this.adresstextBox5.Size = new System.Drawing.Size(100, 23);
             this.adresstextBox5.TabIndex = 0;
+            this.adresstextBox5.TextChanged += new System.EventHandler(this.adresstextBox5_TextChanged);
             // 
             // salarytextBox
             // 
@@ -223,7 +224,7 @@
             this.name});
             this.listView.GridLines = true;
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(26, 73);
+            this.listView.Location = new System.Drawing.Point(26, 70);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(366, 405);
             this.listView.TabIndex = 4;

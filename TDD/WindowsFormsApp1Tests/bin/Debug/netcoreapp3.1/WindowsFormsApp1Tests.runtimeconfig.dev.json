@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\dani\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\dani\\.nuget\\packages"
+      "C:\\Users\\kilim\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kilim\\.nuget\\packages"
     ]
   }
 }

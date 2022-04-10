@@ -52,8 +52,6 @@
             this.id = new System.Windows.Forms.ColumnHeader();
             this.name = new System.Windows.Forms.ColumnHeader();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.sortbtn = new System.Windows.Forms.Button();
             this.showbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -187,7 +185,7 @@
             // 
             // addmorebtn
             // 
-            this.addmorebtn.Location = new System.Drawing.Point(468, 312);
+            this.addmorebtn.Location = new System.Drawing.Point(583, 312);
             this.addmorebtn.Name = "addmorebtn";
             this.addmorebtn.Size = new System.Drawing.Size(153, 33);
             this.addmorebtn.TabIndex = 3;
@@ -207,7 +205,7 @@
             // 
             // taxbtn
             // 
-            this.taxbtn.Location = new System.Drawing.Point(249, 484);
+            this.taxbtn.Location = new System.Drawing.Point(425, 312);
             this.taxbtn.Name = "taxbtn";
             this.taxbtn.Size = new System.Drawing.Size(82, 32);
             this.taxbtn.TabIndex = 3;
@@ -224,9 +222,9 @@
             this.name});
             this.listView.GridLines = true;
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(26, 70);
+            this.listView.Location = new System.Drawing.Point(53, 70);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(366, 405);
+            this.listView.Size = new System.Drawing.Size(326, 405);
             this.listView.TabIndex = 4;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
@@ -264,27 +262,9 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "רשימת עובדים";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(135, 493);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 15);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "מס הכנסה חודשי";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(65, 493);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(31, 15);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "xxxx";
-            // 
             // sortbtn
             // 
-            this.sortbtn.Location = new System.Drawing.Point(468, 369);
+            this.sortbtn.Location = new System.Drawing.Point(583, 367);
             this.sortbtn.Name = "sortbtn";
             this.sortbtn.Size = new System.Drawing.Size(153, 33);
             this.sortbtn.TabIndex = 3;
@@ -294,7 +274,7 @@
             // 
             // showbtn
             // 
-            this.showbtn.Location = new System.Drawing.Point(468, 423);
+            this.showbtn.Location = new System.Drawing.Point(410, 367);
             this.showbtn.Name = "showbtn";
             this.showbtn.Size = new System.Drawing.Size(153, 33);
             this.showbtn.TabIndex = 3;
@@ -308,8 +288,6 @@
             this.ClientSize = new System.Drawing.Size(811, 546);
             this.Controls.Add(this.showbtn);
             this.Controls.Add(this.sortbtn);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.listView);
             this.Controls.Add(this.taxbtn);
@@ -359,8 +337,6 @@
         private System.Windows.Forms.Button taxbtn;
         private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button sortbtn;
         private System.Windows.Forms.Button showbtn;
         private System.Windows.Forms.ColumnHeader salary;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace WindowsFormsApp1
 {
@@ -94,7 +95,7 @@ namespace WindowsFormsApp1
 
         private void addmorebtn_Click(object sender, EventArgs e)
         {
-            AddEmployees(10000);
+            AddEmployees(100);
         }
 
         public ListView getListView()
@@ -126,112 +127,84 @@ namespace WindowsFormsApp1
 
         private void sortbtn_Click(object sender, EventArgs e)
         {
-            
+            Stopwatch MyTimer = new Stopwatch();
+            MyTimer.Start();
             SortBySalary();
+            MyTimer.Stop();
+            MessageBox.Show("it takes: " + MyTimer.ElapsedMilliseconds + " " + "Millisecond");
         }
 
         public void SortBySalary()
-        {     
+        {
             ////bubble sort runtime O(n^2)
             //ListView SortedlistView = new ListView();
             //int n = listView.Items.Count;
             //for (int i = 0; i < n - 1; i++)
             //    for (int j = 0; j < n - i - 1; j++)
             //        if (double.Parse(listView.Items[j].SubItems[1].Text) > double.Parse(listView.Items[j + 1].SubItems[1].Text))
-            //        {                        
+            //        {
             //            ListViewItem temp1 = listView.Items[j];
-            //            ListViewItem temp2 = listView.Items[j+1];
+            //            ListViewItem temp2 = listView.Items[j + 1];
             //            listView.Items.Remove(temp1);
-            //            listView.Items.Insert(j+1, temp1);
+            //            listView.Items.Insert(j + 1, temp1);
             //            listView.Items.Remove(temp2);
             //            listView.Items.Insert(j, temp2);
             //        }
 
-            ListViewItem[] items = new ListViewItem[listView.Items.Count];
-            listView.Items.CopyTo(items, 0);
+            //heap sort runtime O(nlog(n))
+            int n = listView.Items.Count;
 
-            sort(items, 0, listView.Items.Count - 1);
+            // Build heap (rearrange array)
+            for (int i = n / 2 - 1; i >= 0; i--)
+                heapify(listView, n, i);
 
-            void merge(ListViewItem[] items, int l, int m, int r)
+            // One by one extract an element from heap
+            for (int i = n - 1; i > 0; i--)
             {
-                // Find sizes of two
-                // subarrays to be merged
-                int n1 = m - l + 1;
-                int n2 = r - m;
 
-                // Create temp arrays
-                ListViewItem [] L = new ListViewItem[n1];
-                ListViewItem [] R = new ListViewItem[n2];
-                int i, j;
+                // Move current root to end
+                ListViewItem temp1 = listView.Items[0];
+                ListViewItem temp2 = listView.Items[i];
+                listView.Items.Remove(temp1);
+                listView.Items.Insert(i, temp1);
+                listView.Items.Remove(temp2);
+                listView.Items.Insert(0, temp2);
 
-                // Copy data to temp arrays
-                for (i = 0; i < n1; ++i)
-                    L[i] = items[l + i];
-                for (j = 0; j < n2; ++j)
-                    R[j] = items[m + 1 + j];
 
-                // Merge the temp arrays
 
-                // Initial indexes of first
-                // and second subarrays
-                i = 0;
-                j = 0;
-
-                // Initial index of merged
-                // subarray array
-                int k = l;
-                while (i < n1 && j < n2)
-                {
-                    if (double.Parse(items[j].SubItems[1].Text) > double.Parse(items[j + 1].SubItems[1].Text))
-                    {
-                        items[k] = L[i];
-                        i++;
-                    }
-                    else
-                    {
-                        items[k] = R[j];
-                        j++;
-                    }
-                    k++;
-                }
-
-                // Copy remaining elements
-                // of L[] if any
-                while (i < n1)
-                {
-                    items[k] = L[i];
-                    i++;
-                    k++;
-                }
-
-                // Copy remaining elements
-                // of R[] if any
-                while (j < n2)
-                {
-                    items[k] = R[j];
-                    j++;
-                    k++;
-                }
+                // call max heapify on the reduced heap
+                heapify(listView, i, 0);
             }
 
-            // Main function that
-            // sorts arr[l..r] using
-            // merge()
-            void sort(ListViewItem [] items, int l, int r)
+
+            // To heapify a subtree rooted with node i which is
+            // an index in arr[]. n is size of heap
+            void heapify(ListView arr, int n, int i)
             {
-                if (l < r)
+                int largest = i; // Initialize largest as root
+                int l = 2 * i + 1; // left = 2*i + 1
+                int r = 2 * i + 2; // right = 2*i + 2
+
+                // If left child is larger than root
+                if (l < n && double.Parse(listView.Items[l].SubItems[1].Text) > double.Parse(listView.Items[largest].SubItems[1].Text))
+                    largest = l;
+
+                // If right child is larger than largest so far
+                if (r < n && double.Parse(listView.Items[r].SubItems[1].Text) > double.Parse(listView.Items[largest].SubItems[1].Text))
+                    largest = r;
+
+                // If largest is not root
+                if (largest != i)
                 {
-                    // Find the middle
-                    // point
-                    int m = l + (r - l) / 2;
+                    ListViewItem temp1 = listView.Items[i];
+                    ListViewItem temp2 = listView.Items[largest];
+                    listView.Items.Remove(temp1);
+                    listView.Items.Insert(largest, temp1);
+                    listView.Items.Remove(temp2);
+                    listView.Items.Insert(i, temp2);
 
-                    // Sort first and
-                    // second halves
-                    sort(items, l, m);
-                    sort(items, m + 1, r);
-
-                    // Merge the sorted halves
-                    merge(items, l, m, r);
+                    // Recursively heapify the affected sub-tree
+                    heapify(arr, n, largest);
                 }
             }
         }

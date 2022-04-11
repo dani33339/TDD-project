@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kilim\\OneDrive - ac.sce.ac.il\\לימודים\\שנה ב\\סמסטר ב\\בדיקות תוכנה\\עבודות הגשה\\TDD\\TDD PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
+    "D:\\projects\\C#\\TDD-PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kilim\\OneDrive - ac.sce.ac.il\\לימודים\\שנה ב\\סמסטר ב\\בדיקות תוכנה\\עבודות הגשה\\TDD\\TDD PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+    "D:\\projects\\C#\\TDD-PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kilim\\OneDrive - ac.sce.ac.il\\לימודים\\שנה ב\\סמסטר ב\\בדיקות תוכנה\\עבודות הגשה\\TDD\\TDD PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectUniqueName": "D:\\projects\\C#\\TDD-PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "projectName": "WindowsFormsApp1",
-        "projectPath": "C:\\Users\\kilim\\OneDrive - ac.sce.ac.il\\לימודים\\שנה ב\\סמסטר ב\\בדיקות תוכנה\\עבודות הגשה\\TDD\\TDD PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\kilim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kilim\\OneDrive - ac.sce.ac.il\\לימודים\\שנה ב\\סמסטר ב\\בדיקות תוכנה\\עבודות הגשה\\TDD\\TDD PROJECT\\TDD\\WindowsFormsApp1\\obj\\",
+        "projectPath": "D:\\projects\\C#\\TDD-PROJECT\\TDD\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\dani\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\C#\\TDD-PROJECT\\TDD\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kilim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -35,19 +35,25 @@ namespace WindowsFormsApp1
 
         private void addonebtn_Click(object sender, EventArgs e)
         {
-            if ((string.IsNullOrEmpty(idtextBox.Text)) ||
-                (string.IsNullOrEmpty(firstnametextBox.Text)) ||
-                (string.IsNullOrEmpty(salarytextBox.Text)))
-                return;
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
+                if ((string.IsNullOrEmpty(tb.Text)))
+                {
+                    MessageBox.Show("You must fill all the deatails!");
+                    return;
+                }
             ListViewItem item = new ListViewItem();
             item.SubItems.Add(salarytextBox.Text);
+            item.SubItems.Add(adresstextBox.Text);
+            item.SubItems.Add(emailtextBox.Text);
+            item.SubItems.Add(phonetextBox.Text);
             item.SubItems.Add(idtextBox.Text);
-            item.SubItems.Add(firstnametextBox.Text);
+            item.SubItems.Add(firstnametextBox.Text+" "+ lastnametextBox.Text);
             listView.Items.Add(item);
-            idtextBox.Clear();
-            firstnametextBox.Clear();
-            salarytextBox.Clear();
 
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
+            {
+                tb.Clear();
+            }
         }
 
         private void taxbtn_Click(object sender, EventArgs e)
@@ -107,20 +113,27 @@ namespace WindowsFormsApp1
         {
             for (int i = 0; i < n; i++)
             {
-                String[] First_names = { "Liam","Noah","Oliver","Elijah","William","James","Benjamin","Lucas","Henry","Alexander"};
-                String[] Last_Names = { "Smith","Johnson","Scottis","Williams","WelshBrown","WelshGarcia","Davis","Welsh","Rodriguez","Martinez"};
-                // creating a StringBuilder object()
+                String[] First_names = { "Liam","Noah","Oliver","Elijah","William","James","Benjamin","Lucas","Henry","Alexander","Robert","Michel","Daniel","Vladimir","Cristian"};
+                String[] Last_Names = { "Smith","Johnson","Scottis","Williams","WelshBrown","WelshGarcia","Davis","Welsh","Rodriguez","Martinez","Lewis", "Müller","Santos", "Vásquez" };
+                String[] streets = { "Itzhak Rager", "Gilad", "Haim BarLev", "HaMeshahrerim", "Masada" };
+                String[] phoneareacode = { "050", "054", "052", "057", "058" };
+                 // creating a StringBuilder object()
                 StringBuilder name = new StringBuilder();
                 Random random = new Random();
 
                
                 String id = random.Next(10000000, 99999999).ToString("D6");
                 String salary = random.Next(0, 100000).ToString();
+                String randomnumber = random.Next(0, 1000).ToString();
+                String phonenumber = random.Next(0000000, 9999999).ToString("D7");
 
                 ListViewItem item = new ListViewItem();
                 item.SubItems.Add(salary);
+                item.SubItems.Add(streets[random.Next(streets.Length)] + " " + randomnumber);
+                item.SubItems.Add(First_names[random.Next(First_names.Length)] + Last_Names[random.Next(Last_Names.Length)] + "@gmail.com");
+                item.SubItems.Add(phoneareacode[random.Next(streets.Length)] + "-" + phonenumber);
                 item.SubItems.Add(id);
-                item.SubItems.Add(First_names[random.Next(First_names.Length)]);
+                item.SubItems.Add(First_names[random.Next(First_names.Length)] + " " + Last_Names[random.Next(Last_Names.Length)]);
                 listView.Items.Add(item);
             }
         }
@@ -131,12 +144,12 @@ namespace WindowsFormsApp1
             MyTimer.Start();
             SortBySalary();
             MyTimer.Stop();
-            MessageBox.Show("it takes: " + MyTimer.ElapsedMilliseconds + " " + "Millisecond");
+            MessageBox.Show("it took: " + MyTimer.ElapsedMilliseconds + " " + "Millisecond");
         }
 
         public void SortBySalary()
         {
-            ////bubble sort runtime O(n^2)
+            //bubble sort runtime O(n^2)
             //ListView SortedlistView = new ListView();
             //int n = listView.Items.Count;
             //for (int i = 0; i < n - 1; i++)
@@ -169,8 +182,6 @@ namespace WindowsFormsApp1
                 listView.Items.Insert(i, temp1);
                 listView.Items.Remove(temp2);
                 listView.Items.Insert(0, temp2);
-
-
 
                 // call max heapify on the reduced heap
                 heapify(listView, i, 0);
@@ -217,6 +228,21 @@ namespace WindowsFormsApp1
         private void adresstextBox5_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void selectedtaxbtn_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem eachItem in listView.SelectedItems)
+            {
+                double newsalary = CalcTax(double.Parse(eachItem.SubItems[1].Text));
+                newsalary = Math.Floor(newsalary * 100) / 100;
+                eachItem.SubItems[0].Text = newsalary.ToString();
+            }
+        }
+
+        private void showbtn_Click(object sender, EventArgs e)
+        {
+            listView.Visible = true;
         }
     }
 }

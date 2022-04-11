@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
 
                
                 String id = random.Next(10000000, 99999999).ToString("D6");
-                String salary = random.Next(0, 100000).ToString();
+                String salary = random.Next(3000, 50000).ToString();
                 String randomnumber = random.Next(0, 1000).ToString();
                 String phonenumber = random.Next(0000000, 9999999).ToString("D7");
 

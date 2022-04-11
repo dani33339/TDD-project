@@ -56,7 +56,7 @@ namespace WindowsFormsApp1.Tests
             }
             for (int i = 0; i < 100; i++)
             {
-                salary = rnd.Next(42911, 200000);
+                salary = rnd.Next(42911, 50000);
                 ExpecedAfterTax = salary - salary * 0.47;
                 AfteTax = t.CalcTax(salary);
                 Assert.AreEqual(ExpecedAfterTax, AfteTax);
